@@ -1,0 +1,47 @@
+Package: yoloman-agent
+Architecture: amd64
+Version: 0.57.73
+Priority: optional
+Section: admin
+Maintainer: mutkluge
+Installed-Size: 56254
+Provides: agentic-mcp
+Depends: libpam0g, libpam-modules
+Conflicts: agentic-mcp
+Replaces: agentic-mcp
+Filename: pool/main/yoloman-agent_0.57.73_amd64.deb
+Size: 15415500
+MD5sum: 902e335868448c9d905392100e7822da
+SHA1: 9389272a10e0e3750cbb3758623665660aa23c54
+SHA256: d628ab8351cf2d60c7c089ce483f4bb75a46be37b921b5f3dca2a378c1960e77
+SHA512: 9cae72667a5586cbc35efda70b62050bcb8829e97c0ff19749f90974bfdb334dd59e7a900288a9924608606ca015e4468f8395cfbdccc30751c542b2f0cdb0a5
+Homepage: https://github.com/imoes/yoloman
+Description: BETA (pre-1.0): the REST/MCP surface and the recorded config formats can
+ still change between versions.
+ YOLO-MANager (yoloman-agent) — an AI-native Linux node agent exposing
+ system state and management over MCP (Streamable HTTP) and REST,
+ reimplementing ansible.builtin modules natively in Go. The daemon is
+ nicknamed "Duppy".
+
+Package: yoloman-bossman
+Architecture: amd64
+Version: 0.57.73
+Priority: optional
+Section: admin
+Maintainer: mutkluge
+Installed-Size: 322033
+Depends: libc6
+Filename: pool/main/yoloman-bossman_0.57.73_amd64.deb
+Size: 98274584
+MD5sum: ed3f2a7225f6ba1ed58b86e206096c77
+SHA1: 86153e5ceb31614f67ed65d06ed1f5ed276fef40
+SHA256: dfa2ba48d0f8c8f7c26162d4c8c7a06d002c16c31b0f2723497cd9cdb88c8999
+SHA512: 8360b77bc404587d52a7ec5b1f7bbf0b3f9eb6d0a0723068afe5bd62415a672cc5e698955d7937d927170baa94953b518d433e699e3c20991b3b8a333bd1ff66
+Homepage: https://github.com/imoes/yoloman
+Description: BETA (pre-1.0): the REST/MCP surface, the recorded config formats and the
+ database schema can still change between versions; an upgrade may need a
+ migration that has not been rehearsed on your data.
+ YOLO-MANager Bossman — the fleet controller: inventory, monitoring, config
+ policy and orchestration for a fleet of yoloman-agent nodes, with its web
+ console. Brings its own Python runtime; needs PostgreSQL with pgvector.
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>YOLO-MANager package repository</title>
+<style>body{font:15px/1.6 system-ui,sans-serif;max-width:52rem;margin:3rem auto;padding:0 1rem}
+pre{background:#f5f5f5;padding:.8rem;overflow-x:auto;border-radius:6px}code{font-size:.92em}
+.warn{background:#fff4f4;border-left:3px solid #d33;padding:.6rem .8rem}</style>
+<h1>YOLO-MANager package repository</h1>
+<p>Version <strong>0.57.73</strong>. Docker Compose remains the primary deployment; these packages are for
+hosts where a container runtime is not wanted. <code>yoloman-agent</code> is the node agent,
+<code>yoloman-bossman</code> the fleet controller.</p>
+
+<h2>Debian / Ubuntu</h2>
+<pre>curl -fsSL https://imoes.github.io/yoloman-packages/yoloman-archive-keyring.asc | sudo gpg --dearmor -o /usr/share/keyrings/yoloman-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/yoloman-archive-keyring.gpg] https://imoes.github.io/yoloman-packages/deb stable main" | sudo tee /etc/apt/sources.list.d/yoloman.list
+sudo apt update
+sudo apt install yoloman-agent      # a managed node
+sudo apt install yoloman-bossman    # the controller</pre>
+<h2>RHEL / AlmaLinux / Rocky / Fedora</h2>
+<pre>sudo tee /etc/yum.repos.d/yoloman.repo &lt;&lt;'REPO'
+[yoloman]
+name=YOLO-MANager
+baseurl=https://imoes.github.io/yoloman-packages/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://imoes.github.io/yoloman-packages/rpm/repodata/repomd.xml.key
+REPO
+sudo dnf install yoloman-agent
+sudo dnf install yoloman-bossman</pre>
+<h2>Bossman needs a database</h2>
+<p>PostgreSQL with the <strong>timescaledb</strong> and <strong>pgvector</strong> extensions. The package
+does not install it, and the postinst prints the four steps; the full walk-through is the Quick start in the
+<a href="https://github.com/imoes/yoloman#quick-start">README</a>.</p>

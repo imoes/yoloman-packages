@@ -1,0 +1,24 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Sun, 23 Aug 2026 17:19:45 +0000
+Description: YOLO-MANager — Bossman and the node agent
+Label: YOLO-MANager
+Origin: yoloman
+Suite: stable
+MD5Sum:
+ 0ac378ab8644232e9a587c4006bfa80a              200 Release
+ 3f0b2bcffd93c37a4a7d3c7583bf21b9             2000 main/binary-amd64/Packages
+ 4700df1d07cabde7ba099d81992d186c             1105 main/binary-amd64/Packages.gz
+SHA1:
+ bcfd7bb10d125ccee35a3d794dbeac65d20e5a70              200 Release
+ 938473262d1cc58e60cfa44f7b2de246f7f847ff             2000 main/binary-amd64/Packages
+ 18960d1e97ebeb0f534afbd718f8794c023ba631             1105 main/binary-amd64/Packages.gz
+SHA256:
+ 1515ec0fdfbfc1f455e95d307487ae2ca9a0e18339b5f459275007dcb80e133a              200 Release
+ 5c90d67a1785e2dbedd2b0a96d6309f0536a814a7bc1f35ca74e4e9177087d4f             2000 main/binary-amd64/Packages
+ bd3e111e21a32dd542dea5f7dc8de0f24e60b4c204b84336eb9d1d4e9f97f088             1105 main/binary-amd64/Packages.gz
+SHA512:
+ b6f9c67ae4e70fc682b6e147dd913de4ceffb30a084863c4d056310b34fad959e5c812d9010dc8671f32183cce31ef43dadebff5b9640f6edf4b2759c690f64d              200 Release
+ 8e967c8cd4535393c04d6c84d422c262aad94de855ca82429abd757d6c502b0a867e832be1ea5086458d20bc7db22de754893613ba9c0b421200599457dc621a             2000 main/binary-amd64/Packages
+ 06b997fae2e3bf514efcd52143377a339314ad58b4b6299afc99f910355f5f800b156eb4ba4dbbacf58d2f02c2ebcbe3d36e01c169af2dd92d7fa75521c129da             1105 main/binary-amd64/Packages.gz
