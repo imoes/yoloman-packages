@@ -1,0 +1,48 @@
+Package: yoloman-agent
+Architecture: amd64
+Version: 0.57.97
+Priority: optional
+Section: admin
+Maintainer: mutkluge
+Installed-Size: 93605
+Provides: agentic-mcp
+Depends: libpam0g, libpam-modules
+Recommends: libelf1t64 | libelf1, libzstd1
+Conflicts: agentic-mcp
+Replaces: agentic-mcp
+Filename: pool/main/yoloman-agent_0.57.97_amd64.deb
+Size: 26672860
+MD5sum: 2b6baadcb5629f6b818ab0d0e97641c0
+SHA1: b9c08186ad3ef80679f7f05232086806ac76420a
+SHA256: 2f3e8d8247c017fa3084e518a2af1a389f993817be759577706314cad9f37667
+SHA512: c72bed0d987bba7281166ecfdf92adf18956e27ae5330ae023a40286d624fe5c6786c202beb0653cfe9c9611a8c68f79455711444fe70ead87b5c261bc929d68
+Homepage: https://github.com/imoes/yoloman
+Description: BETA (pre-1.0): the REST/MCP surface and the recorded config formats can
+ still change between versions.
+ YOLO-MANager (yoloman-agent) — an AI-native Linux node agent exposing
+ system state and management over MCP (Streamable HTTP) and REST,
+ reimplementing ansible.builtin modules natively in Go. The daemon is
+ nicknamed "Duppy".
+
+Package: yoloman-bossman
+Architecture: amd64
+Version: 0.57.97
+Priority: optional
+Section: admin
+Maintainer: mutkluge
+Installed-Size: 338606
+Depends: libc6
+Filename: pool/main/yoloman-bossman_0.57.97_amd64.deb
+Size: 101724978
+MD5sum: 46656ad1d25152cba20e2581ba78444a
+SHA1: 3e9ca48290fd4e207bb1def91a4c3b2943a51188
+SHA256: fe9890f6aaa0b7bccb60878f6a1205190d898a0beff4e3e80cd96c872c761a04
+SHA512: c4f0c29240b70a7ff9df3cea63c98debdedf7d3084b1ad62f81cf24969287fbe8caf5b1d63b40f51a05dea0d1c0413b52de7e884cf0b281772654c45f79172ab
+Homepage: https://github.com/imoes/yoloman
+Description: BETA (pre-1.0): the REST/MCP surface, the recorded config formats and the
+ database schema can still change between versions; an upgrade may need a
+ migration that has not been rehearsed on your data.
+ YOLO-MANager Bossman — the fleet controller: inventory, monitoring, config
+ policy and orchestration for a fleet of yoloman-agent nodes, with its web
+ console. Brings its own Python runtime; needs PostgreSQL with pgvector.
+
